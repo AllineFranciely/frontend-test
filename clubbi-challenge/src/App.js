@@ -1,9 +1,16 @@
 import React from 'react';
-import Movies from './pages/Movies';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <Movies />
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
