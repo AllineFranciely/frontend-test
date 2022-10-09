@@ -1,16 +1,17 @@
 import React from 'react';
+import './Card.css';
 
 function Card({ title, image, originalTitle, originalTitleRomanised, director, year, nota, description, duracao }) {
   return (
-    <div>
+    <div className="Card" data-testid="Card">
       <h1>{title}</h1>
-      <img src={image} alt={`imagem do filme${title}`} />
-      <p>{originalTitle} - {originalTitleRomanised}</p>
-      <p>Diretor: {director}</p>
-      <p>Ano: {year}</p>
-      <p>Nota: {nota}</p>
-      <p>Tempo: {duracao} min</p>
-      <p>{description}</p>
+      <img className="filmIMG" src={image} alt={`imagem do filme${title}`} />
+      <p data-testid="tituloOriginal">{originalTitle} - {originalTitleRomanised}</p>
+      <p data-testid="diretor">Diretor: {director}</p>
+      <p data-testid="ano">Ano: {year}</p>
+      <p data-testid="nota">Nota: {nota}</p>
+      <p data-testid="tempo">Tempo: {duracao} min</p>
+      <p className="description" data-testid="descricao">{description}</p>
     </div>
   );
 }

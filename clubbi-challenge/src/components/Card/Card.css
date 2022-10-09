@@ -1,0 +1,15 @@
+.Card {
+  background-image: linear-gradient(to bottom, rgb(200, 168, 252), rgb(238, 221, 247) );
+  border: solid 1px black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 6px;
+  width: 25%;
+}
+
+.filmIMG {
+  height: 30%;
+  padding: 6px;
+  width: 95%;
+}

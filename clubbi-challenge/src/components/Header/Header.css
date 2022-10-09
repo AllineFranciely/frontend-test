@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.balao {
+  background: #000;
+  background-color: #5e35b1;
+  border-radius: 0 30px 30px 0;
+  box-shadow: 0 7px 7px 0 rgb(126, 93, 180), 0 10px 50px 0 rgb(152, 93, 180);
+  color: #fff;
+  font-family: 'open sans';
+  font-size: .95em;
+  height: 30px;
+  margin-bottom: 1em;
+  margin-left: 10px;
+  position: relative;
+  text-align: center;
+  width: 100px;
+}
+
+.balao:after{
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #5e35b1;
+  border-radius: 50%;
+  border-top: 15px solid transparent;
+  content: "";
+  position: absolute;
+  right: -6px;
+}
+
+.logo {
+  height: 10%;
+  margin-right: 6px;
+  margin-top: 6px;
+  width: 10%;
+}
+
+.clubbiTitle {
+  background-image: linear-gradient(to right, rgb(136, 82, 223), rgb(210, 160, 233) );
+  background-clip: text;
+  font-style: oblique;
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
