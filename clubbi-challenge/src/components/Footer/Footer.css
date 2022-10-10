@@ -44,3 +44,77 @@
   justify-content: space-between;
   margin-left: 10px;
 }
+
+/* Para desktops / telas grandes */
+@media only screen and (min-width: 1025px)
+{
+  .LogoFooter {
+    height: 25%;
+    width: 15%;
+  }
+
+  .rede {
+    width: 35px
+  }
+
+  .pFooter {
+    font-size: 17px;
+    margin-left: 83%;
+  }
+}
+
+/* Para telas pequena / laptops */
+@media only screen and (max-width: 1024px)
+{
+  .LogoFooter {
+    height: 25%;
+    width: 15%;
+  }
+
+  .rede {
+    width: 35px
+  }
+
+  .pFooter {
+    font-size: 15px;
+    margin-left: 83%;
+  }
+}
+
+/* Para Tablet */
+@media only screen and (max-width: 768px)
+{
+  .LogoFooter {
+    height: 35%;
+    width: 20%;
+  }
+
+  .rede {
+    width: 35px
+  }
+
+  .pFooter {
+    font-size: 17px;
+    margin-left: 73%;
+  }
+}
+
+/* Para mobile */
+@media only screen and (max-width: 600px)
+{
+  .LogoFooter {
+    height: 55%;
+    margin-top: 50px;
+    width: 25%;
+  }
+
+  .pFooter {
+    font-size: 12px;
+    margin-left: 60%;
+  }
+  
+  .footerLine {
+    margin-top: 1px;
+    width: 100%;
+  }
+}

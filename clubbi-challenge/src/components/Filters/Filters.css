@@ -6,12 +6,11 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  height: 65%;
+  height: 75%;
   margin-left: 5px;
   position:absolute;
   width: 25%;
 }
-
 
 .cards {
   background-color: white;
@@ -19,7 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 380px;
+  margin-left: 400px;
   margin-right: 20px;
   margin-top: 20px;
 }
@@ -77,6 +76,7 @@
 }
 
 .titleFilter {
+  color: white;
   font-size: 20px;
   text-align: center;
 }
@@ -84,6 +84,18 @@
 /* Para desktops / telas grandes */
 @media only screen and (min-width: 1025px)
 {
+  .filters {
+    height: 55%;
+    margin-left: 3px;
+    position:absolute;
+    width: 25%;
+  }
+
+  .imgHi {
+    height: 300px;
+    width: 100%;
+  }
+
   .search {
     font-size:large;
     width: 75.5%;
@@ -109,12 +121,16 @@
 @media only screen and (max-width: 1024px)
 {
   .filters {
-    height: 35%;
+    height: 60%;
     margin-left: 3px;
     position:absolute;
     width: 35%;
   }
   
+  .titleFilter {
+    font-size: 25px;
+  }
+
   .search {
     font-size:large;
     width: 75.5%;
@@ -139,11 +155,21 @@
 /* Para Tablet */
 @media only screen and (max-width: 768px)
 {
+
+  .cards {
+    margin-left: 300px;
+  }
+
   .filters {
     height: 40%;
     margin-left: 3px;
     position:absolute;
     width: 35%;
+  }
+
+  .imgHi {
+    height: 250px;
+    width: 100%;
   }
 
   .search {
@@ -171,10 +197,21 @@
 @media only screen and (max-width: 600px)
 {
   .filters {
-    height: 50%;
+    height: 55%;
     margin-left: 3px;
     position:absolute;
     width: 40%;
+  }
+
+  .cards {
+    margin-left: 230px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  .imgHi {
+    height: 100px;
+    width: 100%;
   }
 
   .search {
@@ -184,7 +221,7 @@
   
   .filteroption {
     font-size:large;
-    width: 83%;
+    width: 85%;
   }
   
   .filteroptionLast {
@@ -194,8 +231,93 @@
 
   .buttons {
     font-size: larger;
-    margin-right: 6px;
     margin-top: 15px;
     width: 110%;
   }
 }
+
+/* Para mobile */
+@media only screen and (max-width: 420px)
+{
+  .filters {
+    height: 55%;
+    margin-left: 3px;
+    position:absolute;
+    width: 40%;
+  }
+
+  .cards {
+    margin-left: 180px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  .imgHi {
+    height: 100px;
+    width: 100%;
+  }
+
+  .search {
+    font-size:large;
+    width: 75.5%;
+  }
+  
+  .filteroption {
+    font-size:large;
+    width: 85%;
+  }
+  
+  .filteroptionLast {
+    font-size:large;
+    width: 75.5%;
+  }
+
+  .buttons {
+    font-size: larger;
+    margin-top: 15px;
+    width: 110%;
+  }
+}
+
+  @media only screen and (max-width: 300px)
+  {
+    .filters {
+      height: 55%;
+      position:absolute;
+      width: 45%;
+    }
+
+    .cards {
+      margin-left: 140px;
+      margin-right: 10px;
+      margin-top: 20px;
+    }
+  
+    .imgHi {
+      height: 100px;
+      width: 100%;
+    }
+
+    .titleFilter {
+      font-size: 15px;
+    }
+
+    .search {
+      margin-left: 3%;
+      width: 80%;
+    }
+    
+    .filteroption {
+      margin-left: 3%;
+      width: 93%;
+    }
+    
+    .filteroptionLast {
+      margin-left: 3%;
+      width: 80%;
+    }
+    
+    .button {
+      width: 30%;
+    }
+  }
