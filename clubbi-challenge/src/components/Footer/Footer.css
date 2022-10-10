@@ -118,3 +118,21 @@
     width: 100%;
   }
 }
+
+
+@media only screen and (max-width: 300px)
+{
+  .LogoFooter {
+    height: 40%;
+    margin-top: 50px;
+    width: 25%;
+  }
+
+  .rede {
+    width: 20px
+  }
+
+  .pFooter {
+    font-size: 10px;
+  }
+}

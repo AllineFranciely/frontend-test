@@ -121,14 +121,15 @@
   {
     .Card {
       font-size: 15px;
+      height: 250px;
     }
     
     .title {
-      font-size: 20px;
+      font-size: 15px;
     }
 
     .filmIMG {
-      height: 35%;
+      height: 55%;
       padding: 3px;
     }
   }

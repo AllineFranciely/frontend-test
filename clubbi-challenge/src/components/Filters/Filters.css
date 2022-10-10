@@ -88,7 +88,7 @@
     height: 55%;
     margin-left: 3px;
     position:absolute;
-    width: 25%;
+    width: 28%;
   }
 
   .imgHi {
@@ -98,30 +98,35 @@
 
   .search {
     font-size:large;
-    width: 75.5%;
+    margin-left: 6%;
+    width: 85%;
   }
   
   .filteroption {
     font-size:large;
-    width: 80%;
+    margin-left: 6%;
+    width: 89%;
   }
   
   .filteroptionLast {
     font-size:large;
-    width: 75.5%;
+    margin-left: 6%;
+    width: 85%;
   }
 
-  .buttons {
-    font-size: larger;
+  .button {
+    font-size: 20px;
     margin-top: 15px;
+    width: 38%;
   }
 }
 
 /* Para telas pequena / laptops */
 @media only screen and (max-width: 1024px)
 {
+  
   .filters {
-    height: 60%;
+    height: 65%;
     margin-left: 3px;
     position:absolute;
     width: 35%;
@@ -133,29 +138,36 @@
 
   .search {
     font-size:large;
-    width: 75.5%;
+    margin-bottom: 20px;
+    margin-left: 3%;
+    width: 90%;
   }
   
   .filteroption {
     font-size:large;
-    width: 80%;
+    margin-bottom: 20px;
+    margin-left: 3%;
+    width: 95%;
   }
   
   .filteroptionLast {
     font-size:large;
-    width: 75.5%;
+    margin-bottom: 20px;
+    margin-left: 3%;
+    width: 90%;
   }
 
-  .buttons {
+  .button {
     font-size: larger;
+    height: 45px;
     margin-top: 15px;
+    width: 40%;
   }
 }
 
 /* Para Tablet */
 @media only screen and (max-width: 768px)
 {
-
   .cards {
     margin-left: 300px;
   }
@@ -174,21 +186,25 @@
 
   .search {
     font-size:large;
-    width: 75.5%;
+    margin-left: 3%;
+    width: 90%;
   }
   
   .filteroption {
     font-size:large;
-    width: 80%;
+    margin-left: 3%;
+    width: 95%;
   }
   
   .filteroptionLast {
     font-size:large;
-    width: 75.5%;
+    margin-left: 3%;
+    width: 90%;
   }
 
-  .buttons {
-    font-size: larger;
+  .button {
+    font-size: 20px;
+    height: 50px;
     margin-top: 15px;
   }
 }
@@ -216,23 +232,27 @@
 
   .search {
     font-size:large;
-    width: 75.5%;
+    margin-left: 2%;
+    width: 90%;
   }
   
   .filteroption {
     font-size:large;
-    width: 85%;
+    margin-left: 2%;
+    width: 97%;
   }
   
   .filteroptionLast {
     font-size:large;
-    width: 75.5%;
+    margin-left: 2%;
+    width: 90%;
   }
 
-  .buttons {
-    font-size: larger;
+  .button {
+    font-size: 20px;
+    height: 55px;
     margin-top: 15px;
-    width: 110%;
+    width: 40%;
   }
 }
 
@@ -240,7 +260,7 @@
 @media only screen and (max-width: 420px)
 {
   .filters {
-    height: 55%;
+    height: 65%;
     margin-left: 3px;
     position:absolute;
     width: 40%;
@@ -259,30 +279,44 @@
 
   .search {
     font-size:large;
-    width: 75.5%;
+    margin-left: 3%;
+    width: 85%;
   }
   
   .filteroption {
     font-size:large;
-    width: 85%;
+    margin-left: 3%;;
+    width: 95%;
   }
   
   .filteroptionLast {
     font-size:large;
-    width: 75.5%;
+    margin-left: 3%;;
+    width: 85%;
+  }
+
+  .button {
+    font-size: 15px;
+    height: 40px;
+    margin-top: 15px;
+    width: 50%;
   }
 
   .buttons {
-    font-size: larger;
-    margin-top: 15px;
-    width: 110%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titleFilter {
+    font-size: 20px;
   }
 }
 
   @media only screen and (max-width: 300px)
   {
     .filters {
-      height: 55%;
+      height: 65%;
       position:absolute;
       width: 45%;
     }
@@ -318,6 +352,15 @@
     }
     
     .button {
-      width: 30%;
+      font-size: 15px;
+      height: 40px;
+      margin-top: 15px;
+      width: 50%;
+    }
+  
+    .buttons {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
     }
   }

@@ -170,3 +170,27 @@
     width: 20%;
   }
 }
+
+  @media only screen and (max-width: 300px)
+  {
+    .balao {
+      font-size: .75em;
+      width: 60px;
+    }
+    
+    .balao:after{
+      border-bottom: 8px solid transparent;
+      border-top: 8px solid transparent;
+      right: -6px;
+    }
+  
+    .clubbiTitle {
+      font-size: 20px;
+    }
+  
+    .logo {
+      height: 20%;
+      margin-top: 10px;
+      width: 20%;
+    }
+  }
