@@ -1,0 +1,46 @@
+.footerInteiro {
+  width: 100%;
+}
+
+.Acima {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer {
+  margin-top: 2%;
+}
+
+.footerLine {
+  margin-top: 1px;
+  width: 100%;
+}
+
+.pFooter {
+  background-image: linear-gradient(to right, rgb(136, 82, 223), rgb(210, 160, 233) );
+  background-clip: text;
+  font-style: oblique;
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: x-small;
+  margin-left: 91%;
+}
+
+.LogoFooter {
+  height: 40%;
+  width: 10%;
+}
+
+.rede {
+  align-items: flex-end;
+  margin-right: 10px;
+  margin-top: 75px;
+  width: 25px
+}
+
+.imageFooter {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}

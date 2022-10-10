@@ -80,3 +80,122 @@
   font-size: 20px;
   text-align: center;
 }
+
+/* Para desktops / telas grandes */
+@media only screen and (min-width: 1025px)
+{
+  .search {
+    font-size:large;
+    width: 75.5%;
+  }
+  
+  .filteroption {
+    font-size:large;
+    width: 80%;
+  }
+  
+  .filteroptionLast {
+    font-size:large;
+    width: 75.5%;
+  }
+
+  .buttons {
+    font-size: larger;
+    margin-top: 15px;
+  }
+}
+
+/* Para telas pequena / laptops */
+@media only screen and (max-width: 1024px)
+{
+  .filters {
+    height: 35%;
+    margin-left: 3px;
+    position:absolute;
+    width: 35%;
+  }
+  
+  .search {
+    font-size:large;
+    width: 75.5%;
+  }
+  
+  .filteroption {
+    font-size:large;
+    width: 80%;
+  }
+  
+  .filteroptionLast {
+    font-size:large;
+    width: 75.5%;
+  }
+
+  .buttons {
+    font-size: larger;
+    margin-top: 15px;
+  }
+}
+
+/* Para Tablet */
+@media only screen and (max-width: 768px)
+{
+  .filters {
+    height: 40%;
+    margin-left: 3px;
+    position:absolute;
+    width: 35%;
+  }
+
+  .search {
+    font-size:large;
+    width: 75.5%;
+  }
+  
+  .filteroption {
+    font-size:large;
+    width: 80%;
+  }
+  
+  .filteroptionLast {
+    font-size:large;
+    width: 75.5%;
+  }
+
+  .buttons {
+    font-size: larger;
+    margin-top: 15px;
+  }
+}
+
+/* Para mobile */
+@media only screen and (max-width: 600px)
+{
+  .filters {
+    height: 50%;
+    margin-left: 3px;
+    position:absolute;
+    width: 40%;
+  }
+
+  .search {
+    font-size:large;
+    width: 75.5%;
+  }
+  
+  .filteroption {
+    font-size:large;
+    width: 83%;
+  }
+  
+  .filteroptionLast {
+    font-size:large;
+    width: 75.5%;
+  }
+
+  .buttons {
+    font-size: larger;
+    margin-right: 6px;
+    margin-top: 15px;
+    width: 110%;
+  }
+}
