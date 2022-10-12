@@ -8,7 +8,7 @@ import { FcAcceptDatabase } from "react-icons/fc";
 function Filters() {
   const [filterByNumericValues, setFilterByNumericValues] = useState([
     {
-      param: 'release_date',
+      param: 'age',
       comparison: 'maior que',
       value: 0,
     },
@@ -16,17 +16,17 @@ function Filters() {
   const { param, comparison, value } = filterByNumericValues[0];
   const [personagens, setPersonagens] = useState([]);
   const [filterByName, setFilterByName] = useState('');
-  const [filterParam] = useState(['gender', 'age']);
-  const [showFilters, setShowFilter] = useState(false);
+  const [filterParam] = useState(['age']);
+  const [showFilters, setShowFilter] = useState(true);
 
   const initialValue = Number(value);
 
   async function getAllPersonagens() {
     try {
-      const response = await fetch('https://ghibliapi.herokuapp.com/people/');
-      const data = response.json();
+      const response = await fetch("https://ghibliapi.herokuapp.com/people/");
+      const data = await response.json();
       console.log(data);
-      setPersonagens(data.PromiseResult);
+      setPersonagens(data);
       console.log(personagens);
     } catch (error) {
       console.log(error);
@@ -37,18 +37,30 @@ function Filters() {
     getAllPersonagens();
   }, []);
 
-  const filterDataResults = () => personagens.filter((movie) => {
+  const filterDataResults = () => personagens.filter((personagem) => {
     if (initialValue || initialValue === 0) {
       if (comparison.includes('maior que')) {
-        return (Number(movie[param]) > initialValue);
+        return (Number(personagem[param]) > initialValue);
       }
       if (comparison.includes('menor que')) {
-        return Number(movie[param]) < initialValue;
+        return Number(personagem[param]) < initialValue;
       }
-      return Number(movie[param]) === initialValue;
+      return Number(personagem[param]) === initialValue;
     }
-    return movie;
+    return personagem;
   });
+
+  const filterGender = () => personagens.filter((personagem) => {
+    if (comparison.includes('Male')) {
+      return (personagem.gender === 'Male')
+    }
+
+    if (comparison.includes('Female')) {
+      return (personagem.gender === 'Female')
+    }
+
+    return personagem;
+  })
 
   return (
     <div className="filterCard">

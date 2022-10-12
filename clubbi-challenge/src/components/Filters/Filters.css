@@ -14,7 +14,6 @@
 }
 
 .iconFilter {
-  height: 30px;
   margin-left: 1px;
   margin-top: 15px;
   width: 30px;
@@ -53,6 +52,7 @@
   border-radius: 5px;
   margin-bottom: 6px;
   margin-left: 10%;
+  margin-top: 5px;
   padding: 6px;
   width: 75.5%;
 }
@@ -128,7 +128,7 @@
   .filteroption {
     font-size:large;
     margin-left: 6%;
-    width: 89%;
+    width: 85%;
   }
   
   .filteroptionLast {
@@ -140,7 +140,12 @@
   .button {
     font-size: 20px;
     margin-top: 15px;
-    width: 38%;
+    
+  }
+
+  .button {
+    margin-right: 10px;
+    width: 35%;
   }
 }
 
@@ -174,7 +179,7 @@
     font-size:large;
     margin-bottom: 20px;
     margin-left: 3%;
-    width: 95%;
+    width: 90%;
   }
   
   .filteroptionLast {
@@ -188,7 +193,11 @@
     font-size: larger;
     height: 45px;
     margin-top: 15px;
-    width: 40%;
+  }
+
+  .buttons {
+    margin-right: 10px;
+    width: 100%;
   }
 }
 
@@ -307,7 +316,7 @@
   .search {
     font-size:large;
     margin-left: 3%;
-    width: 85%;
+    width: 95%;
   }
   
   .filteroption {
@@ -319,7 +328,7 @@
   .filteroptionLast {
     font-size:large;
     margin-left: 3%;;
-    width: 85%;
+    width: 95%;
   }
 
   .button {
@@ -365,7 +374,7 @@
 
     .search {
       margin-left: 3%;
-      width: 80%;
+      width: 93%;
     }
     
     .filteroption {
@@ -375,7 +384,7 @@
     
     .filteroptionLast {
       margin-left: 3%;
-      width: 80%;
+      width: 93%;
     }
     
     .button {

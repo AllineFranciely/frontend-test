@@ -42,23 +42,37 @@
   font-style: oblique;
    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 10px;
 }
 
 /* Para desktops / telas grandes */
 @media only screen and (min-width: 1025px)
 {
   .balao {
+    background: #000;
+    background-color: #5e35b1;
+    border-radius: 0 30px 30px 0;
+    box-shadow: 0 7px 7px 0 rgb(126, 93, 180), 0 10px 50px 0 rgb(152, 93, 180);
+    color: #fff;
+    font-family: 'open sans';
+    font-size: .95em;
+    height: 30px;
     margin-bottom: 1em;
     margin-left: 10px;
-    margin-top: 35px;
-    padding-top: 5px;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
     width: 100px;
   }
   
   .balao:after{
     border-bottom: 15px solid transparent;
+    border-left: 15px solid #5e35b1;
+    border-radius: 50%;
     border-top: 15px solid transparent;
-    right: -8px;
+    content: "";
+    position: absolute;
+    right: -6px;
   }
 
   .clubbiTitle {
@@ -80,7 +94,6 @@
     margin-bottom: 1em;
     margin-left: 10px;
     margin-top: 35px;
-    padding-top: 5px;
     width: 100px;
   }
   
@@ -109,7 +122,6 @@
     height: 30px;
     margin-bottom: 1em;
     margin-top: 40px;
-    padding-top: 5px;
     width: 100px;
   }
   
