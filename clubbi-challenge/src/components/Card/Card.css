@@ -9,6 +9,21 @@
   width: 25%;
 }
 
+.CardPersonagem {
+  background-image: linear-gradient(to bottom, rgb(200, 168, 252), rgb(238, 221, 247) );
+  border: solid 1px black;
+  border-radius: 10px;
+  height: 185px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 6px;
+  width: 30%;
+}
+
+.name {
+  font-size: 25px;
+}
+
 .filmIMG {
   height: 30%;
   padding: 6px;
@@ -19,17 +34,32 @@
 @media only screen and (min-width: 1025px)
 {
   .Card {
-  font-size: 25px;
-  height: 600px;
-  padding: 6px;
-  overflow:auto; 
-  width: 25%;
+    font-size: 25px;
+    height: 600px;
+    padding: 6px;
+    overflow:auto; 
+    width: 25%;
+  }
+
+  .CardPersonagem {
+    background-image: linear-gradient(to bottom, rgb(200, 168, 252), rgb(238, 221, 247) );
+    border: solid 1px black;
+    border-radius: 10px;
+    height: 185px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 6px;
+    width: 30%;
+  }
+  
+  .name {
+    font-size: 25px;
   }
 
   .filmIMG {
-  height: 350px;
-  padding: 6px;
-  width: 95%;
+    height: 350px;
+    padding: 6px;
+    width: 95%;
   }
 }
 
@@ -61,6 +91,18 @@
     overflow:auto; 
     width: 45%;
   }
+
+  .CardPersonagem {
+    height: 220px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 6px;
+    width: 30%;
+  }
+  
+  .name {
+    font-size: 20px;
+  }
   
   .title {
     font-size: 35px;
@@ -82,6 +124,15 @@
     padding: 6px;
     overflow:auto; 
     width: 100%;
+  }
+
+  .CardPersonagem {
+    height: 200px;
+    width: 40%;
+  }
+  
+  .name {
+    font-size: 20px;
   }
   
   .title {
@@ -105,6 +156,15 @@
     overflow:auto; 
     width: 100%;
   }
+
+  .CardPersonagem {
+    height: 220px;
+    width: 49%;
+  }
+  
+  .name {
+    font-size: 20px;
+  }
   
   .title {
     font-size: 35px;
@@ -117,20 +177,23 @@
   }
 }
 
+@media only screen and (max-width: 420px)
+  {
+    .CardPersonagem {
+      height: 180px;
+      width: 90%;
+    }
+  }
+
   @media only screen and (max-width: 300px)
   {
-    .Card {
-      font-size: 15px;
-      height: 250px;
+    .CardPersonagem {
+      height: 220px;
+      width: 95%;
     }
     
-    .title {
-      font-size: 15px;
-    }
-
-    .filmIMG {
-      height: 55%;
-      padding: 3px;
+    .name {
+      font-size: 20px;
     }
   }
 

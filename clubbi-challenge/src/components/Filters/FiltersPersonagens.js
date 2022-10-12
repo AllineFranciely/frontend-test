@@ -25,11 +25,11 @@ function Filters() {
     try {
       const response = await fetch("https://ghibliapi.herokuapp.com/people/");
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       setPersonagens(data);
-      console.log(personagens);
+      // console.log(personagens);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   }
 
@@ -49,18 +49,6 @@ function Filters() {
     }
     return personagem;
   });
-
-  const filterGender = () => personagens.filter((personagem) => {
-    if (comparison.includes('Male')) {
-      return (personagem.gender === 'Male')
-    }
-
-    if (comparison.includes('Female')) {
-      return (personagem.gender === 'Female')
-    }
-
-    return personagem;
-  })
 
   return (
     <div className="filterCard">
