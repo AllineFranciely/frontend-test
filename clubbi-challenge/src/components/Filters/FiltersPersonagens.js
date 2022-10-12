@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
-import { getMovies } from '../../utils/API';
-import Card from '../Card/Card';
+import CardPersonagem from '../Card/CardPersonagem';
 import './Filters.css';
 import Hi from '../../images/Hi.gif';
 import { FcAcceptDatabase } from "react-icons/fc";
@@ -15,24 +14,30 @@ function Filters() {
     },
   ]);
   const { param, comparison, value } = filterByNumericValues[0];
-  const [movies, setMovies] = useState([]);
+  const [personagens, setPersonagens] = useState([]);
   const [filterByName, setFilterByName] = useState('');
-  const [filterParam] = useState(['release_date', 'rt_score', 'running_time']);
-  const [showFilters, setShowFilter] = useState(true);
+  const [filterParam] = useState(['gender', 'age']);
+  const [showFilters, setShowFilter] = useState(false);
 
   const initialValue = Number(value);
 
-  async function getAllMovies() {
-    const allMovies = await getMovies();
-    setMovies(allMovies);
-    // console.log(movies);
+  async function getAllPersonagens() {
+    try {
+      const response = await fetch('https://ghibliapi.herokuapp.com/people/');
+      const data = response.json();
+      console.log(data);
+      setPersonagens(data.PromiseResult);
+      console.log(personagens);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   useEffect(() => {
-    getAllMovies();
+    getAllPersonagens();
   }, []);
 
-  const filterDataResults = () => movies.filter((movie) => {
+  const filterDataResults = () => personagens.filter((movie) => {
     if (initialValue || initialValue === 0) {
       if (comparison.includes('maior que')) {
         return (Number(movie[param]) > initialValue);
@@ -50,7 +55,7 @@ function Filters() {
       <FcAcceptDatabase className="iconFilter" onClick={() => setShowFilter(!showFilters)}/>
       {showFilters ? (
       <div className="filters">
-        <p className="titleFilter">Filtre e encontre seus filmes</p>
+        <p className="titleFilter">Filtre e encontre seus personagens</p>
         <input
           type="text"
           className="search"
@@ -102,7 +107,7 @@ function Filters() {
             className="button"
             data-testid="button-filter"
             onClick={() => {
-              setMovies(() => filterDataResults());
+              setPersonagens(() => filterDataResults());
             }}
           >
             Filtrar
@@ -121,22 +126,18 @@ function Filters() {
       ) : (
         ''
       )}
-      <div className={showFilters? "cards": "cardsInt"}>
+      <div className="cards">
         <img className="imgHi" src={Hi} alt="Gif de anime" />
-        {movies && movies.filter((filterMovie) => filterMovie.title
+        {personagens && personagens.filter((filterPersonagem) => filterPersonagem.name
           .includes(filterByName))
-          .map((movie) => (
-            <Card
-              key={movie.id}
-              title={movie.title}
-              image={movie.image}
-              originalTitle={movie.original_title}
-              originalTitleRomanised={movie.original_title_romanised}
-              year={movie.release_date}
-              director={movie.director}
-              nota={movie.rt_score}
-              duracao={movie.running_time}
-              description={movie.description}
+          .map((personagem) => (
+            <CardPersonagem
+              key={personagem.id}
+              name={personagem.name}
+              gender={personagem.gender}
+              age={personagem.age}
+              eye_color={personagem.eye_color}
+              hair_color={personagem.hair_color}
             />
           ))}
       </div>
