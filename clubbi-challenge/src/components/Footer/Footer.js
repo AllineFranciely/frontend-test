@@ -4,6 +4,7 @@ import Logo from '../../images/logo.gif';
 import Instagram from '../../images/instagram.png';
 import LinkedIn from '../../images/linkedin.png';
 import GitHub from '../../images/github.png';
+import { BiChevronUp } from 'react-icons/bi';
 
 function Footer() {
   return (
@@ -11,6 +12,7 @@ function Footer() {
       <div className="imageFooter">
         <img src={Logo} alt="Logo" className="LogoFooter" />
         <div>
+        
           <a
             href="https://www.linkedin.com/in/alline-franciely-silva/"
             target="_blank"
@@ -35,6 +37,11 @@ function Footer() {
         </div>
       </div>
       <hr className="footerLine"></hr>
+      <section className='section-a'>
+        <a href='#container-header'>
+        <p className="back"> Voltar ao topo < BiChevronUp /></p> 
+        </a>
+      </section>
       <p className="pFooter">© 2022 <b>Alline Franciely</b>.</p>
     </div >
   );

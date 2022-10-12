@@ -5,6 +5,7 @@ import Card from '../Card/Card';
 import './Filters.css';
 import Hi from '../../images/Hi.gif';
 import { FcAcceptDatabase } from "react-icons/fc";
+import Loading from '../Loading/Loading';
 
 function Filters() {
   const [filterByNumericValues, setFilterByNumericValues] = useState([
@@ -19,12 +20,14 @@ function Filters() {
   const [filterByName, setFilterByName] = useState('');
   const [filterParam] = useState(['release_date', 'rt_score', 'running_time']);
   const [showFilters, setShowFilter] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   const initialValue = Number(value);
 
   async function getAllMovies() {
     const allMovies = await getMovies();
     setMovies(allMovies);
+    setLoading(false);
     // console.log(movies);
   }
 
@@ -46,6 +49,7 @@ function Filters() {
   });
 
   return (
+    !loading ? (
     <div className="filterCard">
       <FcAcceptDatabase className="iconFilter" onClick={() => setShowFilter(!showFilters)}/>
       {showFilters ? (
@@ -141,6 +145,9 @@ function Filters() {
           ))}
       </div>
     </div>
+    ) : (
+      <Loading />
+    )
   );
 }
 

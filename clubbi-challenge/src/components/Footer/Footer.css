@@ -27,6 +27,14 @@
   margin-left: 91%;
 }
 
+.back {
+  background-image: linear-gradient(to right, rgb(136, 82, 223), rgb(210, 160, 233) );
+  background-clip: text;
+  font-style: oblique;
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .LogoFooter {
   height: 40%;
   width: 10%;

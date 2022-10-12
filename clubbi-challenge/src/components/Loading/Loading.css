@@ -1,0 +1,549 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --azul-claro: #f3fbfb;
+
+  --azul: #bae8e8;
+
+  --amarelo: #ffd803;
+
+  --preto: #272343;
+
+}
+
+/* Para mobile */
+@media only screen and (max-width: 600px)
+{
+  .body-loading {
+    background: var(--preto);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-loading {
+    width: 40px;
+    transform: rotate(-45deg);
+  }
+
+  .loading {
+    position: absolute;
+    top: 18rem !important;
+  }
+
+  .loading .squares {
+    transform: rotate(45deg) translateX(50%);
+  }
+
+  .loading .square-1, .loading .square-2, .loading .square-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+  }
+
+  .loading .square-1 {
+    animation: 3.5s animate-square-1 ease infinite;
+  }
+
+  .loading .square-2 {
+    animation: 3.5s animate-square-2 ease infinite;
+    margin-left: 74px;
+  }
+
+  .loading .square-3 {
+    animation: 3.5s animate-square-3 ease infinite;
+    margin-top: 74px;
+  }
+
+  @keyframes animate-square-1 {
+    0%,
+    8.33%,
+    91.66%,
+    100% {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    16.66%,
+    25%,
+    33.33% {
+      margin-top: 0;
+      margin-left: 74px;
+    }
+    41.66%,
+    50%,
+    58.33% {
+      margin-top: 74px;
+      margin-left: 74px;
+    }
+    66.66%,
+    75%,
+    83.33% {
+      margin-top: 74px;
+      margin-left: 0;
+    }
+  }
+
+  @keyframes animate-square-2 {
+    0%,
+    83.33%,
+    91.66%,
+    100% {
+      margin-top: 0;
+      margin-left: 74px;
+    }
+    8.33%,
+    16.66%,
+    25% {
+      margin-top: 74px;
+      margin-left: 74px;
+    }
+    33.33%,
+    41.66%,
+    50% {
+      margin-top: 74px;
+      margin-left: 0;
+    }
+    58.33%,
+    66.66%,
+    75% {
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+
+  @keyframes animate-square-3 {
+    0%,
+    8.33%,
+    16.66%,
+    100% {
+      margin-top: 74px;
+      margin-left: 0;
+    }
+    25%,
+    33.33%,
+    41.66% {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    50%,
+    58.33%,
+    66.66% {
+      margin-top: 0;
+      margin-left: 74px;
+    }
+    75%,
+    83.33%,
+    91.66% {
+      margin-top: 74px;
+      margin-left: 74px;
+    }
+  }
+}
+
+/* Para Tablet */
+@media only screen and (max-width: 768px)
+{
+  .body-loading {
+    background: var(--preto);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-loading {
+    width: 40px;
+    transform: rotate(-45deg);
+  }
+
+  .loading {
+    position: absolute;
+    top: 20rem;
+  }
+
+  .loading .squares {
+    transform: rotate(45deg) translateX(50%);
+  }
+
+  .loading .square-1, .loading .square-2, .loading .square-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+  }
+
+  .loading .square-1 {
+    animation: 3.5s animate-square-1 ease infinite;
+  }
+
+  .loading .square-2 {
+    animation: 3.5s animate-square-2 ease infinite;
+    margin-left: 74px;
+  }
+
+  .loading .square-3 {
+    animation: 3.5s animate-square-3 ease infinite;
+    margin-top: 74px;
+  }
+
+  @keyframes animate-square-1 {
+    0%,
+    8.33%,
+    91.66%,
+    100% {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    16.66%,
+    25%,
+    33.33% {
+      margin-top: 0;
+      margin-left: 74px;
+    }
+    41.66%,
+    50%,
+    58.33% {
+      margin-top: 74px;
+      margin-left: 74px;
+    }
+    66.66%,
+    75%,
+    83.33% {
+      margin-top: 74px;
+      margin-left: 0;
+    }
+  }
+
+  @keyframes animate-square-2 {
+    0%,
+    83.33%,
+    91.66%,
+    100% {
+      margin-top: 0;
+      margin-left: 74px;
+    }
+    8.33%,
+    16.66%,
+    25% {
+      margin-top: 74px;
+      margin-left: 74px;
+    }
+    33.33%,
+    41.66%,
+    50% {
+      margin-top: 74px;
+      margin-left: 0;
+    }
+    58.33%,
+    66.66%,
+    75% {
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+
+  @keyframes animate-square-3 {
+    0%,
+    8.33%,
+    16.66%,
+    100% {
+      margin-top: 74px;
+      margin-left: 0;
+    }
+    25%,
+    33.33%,
+    41.66% {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    50%,
+    58.33%,
+    66.66% {
+      margin-top: 0;
+      margin-left: 74px;
+    }
+    75%,
+    83.33%,
+    91.66% {
+      margin-top: 74px;
+      margin-left: 74px;
+    }
+  }
+}
+
+/* Para telas pequena / laptops */
+@media only screen and (max-width: 1024px)
+{
+  .body-loading {
+    background: var(--preto);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-loading {
+    width: 40px;
+    transform: rotate(-45deg);
+  }
+
+  .loading {
+    position: absolute;
+    top: 20rem;
+  }
+
+  .loading .squares {
+    transform: rotate(45deg) translateX(50%);
+  }
+
+  .loading .square-1, .loading .square-2, .loading .square-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+  }
+
+  .loading .square-1 {
+    animation: 3.5s animate-square-1 ease infinite;
+  }
+
+  .loading .square-2 {
+    animation: 3.5s animate-square-2 ease infinite;
+    margin-left: 74px;
+  }
+
+  .loading .square-3 {
+    animation: 3.5s animate-square-3 ease infinite;
+    margin-top: 74px;
+  }
+
+  @keyframes animate-square-1 {
+    0%,
+    8.33%,
+    91.66%,
+    100% {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    16.66%,
+    25%,
+    33.33% {
+      margin-top: 0;
+      margin-left: 74px;
+    }
+    41.66%,
+    50%,
+    58.33% {
+      margin-top: 74px;
+      margin-left: 74px;
+    }
+    66.66%,
+    75%,
+    83.33% {
+      margin-top: 74px;
+      margin-left: 0;
+    }
+  }
+
+  @keyframes animate-square-2 {
+    0%,
+    83.33%,
+    91.66%,
+    100% {
+      margin-top: 0;
+      margin-left: 74px;
+    }
+    8.33%,
+    16.66%,
+    25% {
+      margin-top: 74px;
+      margin-left: 74px;
+    }
+    33.33%,
+    41.66%,
+    50% {
+      margin-top: 74px;
+      margin-left: 0;
+    }
+    58.33%,
+    66.66%,
+    75% {
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+
+  @keyframes animate-square-3 {
+    0%,
+    8.33%,
+    16.66%,
+    100% {
+      margin-top: 74px;
+      margin-left: 0;
+    }
+    25%,
+    33.33%,
+    41.66% {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    50%,
+    58.33%,
+    66.66% {
+      margin-top: 0;
+      margin-left: 74px;
+    }
+    75%,
+    83.33%,
+    91.66% {
+      margin-top: 74px;
+      margin-left: 74px;
+    }
+  }
+}
+
+/* Para desktops / telas grandes */
+@media only screen and (min-width: 1025px)
+{
+  .body-loading {
+    background: var(--preto);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-loading {
+    width: 90px;
+    transform: rotate(-45deg);
+  }
+
+  .loading {
+    position: absolute;
+    top: 25%;
+  }
+
+  .loading .squares {
+    transform: rotate(45deg) translateX(50%);
+  }
+
+  .loading .square-1, .loading .square-2, .loading .square-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+  }
+
+  .loading .square-1 {
+    animation: 3.5s animate-square-1 ease infinite;
+  }
+
+  .loading .square-2 {
+    animation: 3.5s animate-square-2 ease infinite;
+    margin-left: 130px;
+  }
+
+  .loading .square-3 {
+    animation: 3.5s animate-square-3 ease infinite;
+    margin-top: 130px;
+  }
+
+  @keyframes animate-square-1 {
+    0%,
+    8.33%,
+    91.66%,
+    100% {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    16.66%,
+    25%,
+    33.33% {
+      margin-top: 0;
+      margin-left: 130px;
+    }
+    41.66%,
+    50%,
+    58.33% {
+      margin-top: 130px;
+      margin-left: 130px;
+    }
+    66.66%,
+    75%,
+    83.33% {
+      margin-top: 130px;
+      margin-left: 0;
+    }
+  }
+
+  @keyframes animate-square-2 {
+    0%,
+    83.33%,
+    91.66%,
+    100% {
+      margin-top: 0;
+      margin-left: 130px;
+    }
+    8.33%,
+    16.66%,
+    25% {
+      margin-top: 130px;
+      margin-left: 130px;
+    }
+    33.33%,
+    41.66%,
+    50% {
+      margin-top: 130px;
+      margin-left: 0;
+    }
+    58.33%,
+    66.66%,
+    75% {
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+
+  @keyframes animate-square-3 {
+    0%,
+    8.33%,
+    16.66%,
+    100% {
+      margin-top: 130px;
+      margin-left: 0;
+    }
+    25%,
+    33.33%,
+    41.66% {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    50%,
+    58.33%,
+    66.66% {
+      margin-top: 0;
+      margin-left: 130px;
+    }
+    75%,
+    83.33%,
+    91.66% {
+      margin-top: 130px;
+      margin-left: 130px;
+    }
+  }
+}
