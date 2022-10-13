@@ -2,7 +2,7 @@ import React from 'react';
 import './Loading.css';
 import Naruto from '../../images/naruto.jpg';
 import OnePiece from '../../images/onepiece.jpg';
-import Nanatsu from '../../images/nanatsu.webp';
+import Nanatsu from '../../images/nanatsu.jpeg';
 
 function Loading() {
   return (

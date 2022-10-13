@@ -30,6 +30,21 @@
   width: 95%;
 }
 
+.CardLocation {
+  background-image: linear-gradient(to bottom, rgb(200, 168, 252), rgb(238, 221, 247) );
+  border: solid 1px black;
+  border-radius: 10px;
+  height: 175px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 6px;
+  width: 30%;
+}
+
+.nameLocation {
+  font-size: 25px;
+}
+
 /* Para desktops / telas grandes */
 @media only screen and (min-width: 1025px)
 {
@@ -113,6 +128,16 @@
     padding: 6px;
     width: 95%;
   }
+
+  .CardLocation {
+    font-size: 18px;
+    height: 200px;
+    width: 30%;
+  }
+
+  .nameLocation {
+    font-size: 20px;
+  }
 }
 
 /* Para Tablet */
@@ -143,6 +168,15 @@
     height: 70%;
     padding: 9px;
     width: 95%;
+  }
+
+  .CardLocation {
+    height: 130px;
+    width: 40%;
+  }
+
+  .nameLocation {
+    font-size: 20px;
   }
 }
 
@@ -175,6 +209,15 @@
     padding: 6px;
     width: 95%;
   }
+
+  .CardLocation {
+    height: 155px;
+    width: 40%;
+  }
+
+  .nameLocation {
+    font-size: 17px;
+  }
 }
 
 @media only screen and (max-width: 420px)
@@ -182,6 +225,15 @@
     .CardPersonagem {
       height: 180px;
       width: 90%;
+    }
+
+    .CardLocation {
+      height: 130px;
+      width: 95%;
+    }
+
+    .nameLocation {
+      font-size: 17px;
     }
   }
 
@@ -194,6 +246,15 @@
     
     .name {
       font-size: 20px;
+    }
+
+    .CardLocation {
+      height: 180px;
+      width: 95%;
+    }
+
+    .nameLocation {
+      font-size: 17px;
     }
   }
 
