@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
-import CardLocation from '../Card/CarLocation';
+import CardLocation from '../Card/CardLocation';
 import './Filters.css';
 import Hi from '../../images/Hi.gif';
 import { FcAcceptDatabase } from "react-icons/fc";
